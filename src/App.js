@@ -7,7 +7,7 @@ import Movie from './Pages/Movie';
 function App() {
   const [movies, setMovies]= useState([])
   const [searchInput, setSearchInput] = useState('')
-  const [carts, setCarts] = useState([])
+  const [carts, setCarts] = useState('')
   // const url=`http://www.omdbapi.com/?s=?${searchInput}&apikey=b8b2a730`
   
   const fetchMovies=(searchInput)=>{
