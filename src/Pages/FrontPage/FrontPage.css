@@ -1,0 +1,42 @@
+.frontview-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+img{
+    height: auto;
+}
+
+.frontview-text {
+    position: absolute;
+    top: 9rem;
+    left: 6rem;
+    font-size: 72px;
+    font-family: 'DM Sans';
+    width: 10%;
+    font-weight: 700;
+    line-height: 94px;
+    letter-spacing: -0.05em;
+}
+
+/* for ipad */
+@media screen and (max-width:900px) {
+    .frontview-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .frontview-text {
+        width: 70%;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
