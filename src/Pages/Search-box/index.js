@@ -3,7 +3,7 @@ import './SearchBox.css'
 export default function SearchBox({searchInput, setSearchInput}) {
   return (
     <div className='searchbox-container'>
-        SearchBox
+        Search
         <div>
             <input 
                 type='text' 
