@@ -11,7 +11,7 @@ function App() {
   // const url=`http://www.omdbapi.com/?s=?${searchInput}&apikey=b8b2a730`
   
   const fetchMovies=(searchInput)=>{
-    axios.get(`http://www.omdbapi.com/?s=${searchInput}&apikey=b8b2a730`)
+    axios.get(`https://www.omdbapi.com/?s=${searchInput}&apikey=b8b2a730`)
       .then(res => {
         setMovies(res.data.Search)
         console.log(res.data.Search);
