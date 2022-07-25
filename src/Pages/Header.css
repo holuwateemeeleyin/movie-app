@@ -12,7 +12,7 @@
 }
 
 .header-box{
-    border: #fff solid 2px;
+    border: 1px solid #fff;
     width: 193px;
     height: 60px;   
 }
@@ -25,5 +25,26 @@
     .header{
         display: flex;
         justify-content: center;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .header-container{
+        height: 67px;
+    }
+    .header-container .header{
+        padding-top: 0.7rem;
+        font-size: 1rem;
+    }
+
+    .header-text {
+        text-align: center;
+        padding-top: 0.3rem;
+    }
+
+    .header-box{
+        border: 1px solid #fff;
+        width: 108px;
+        height: 33.58px;   
     }
 }
