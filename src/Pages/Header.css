@@ -1,0 +1,29 @@
+.header-container{
+    background-color: #292929;
+    color: #fff;
+    height: 140px;
+}
+
+.header-container .header{
+    width: 90%;
+    margin: auto;
+    padding-top: 2rem;
+    font-size: 1.25rem;
+}
+
+.header-box{
+    border: #fff solid 2px;
+    width: 193px;
+    height: 60px;   
+}
+.header-text {
+    text-align: center;
+    padding-top: 0.6rem;
+}
+
+@media screen and (max-width:900px) {
+    .header{
+        display: flex;
+        justify-content: center;
+    }
+}
