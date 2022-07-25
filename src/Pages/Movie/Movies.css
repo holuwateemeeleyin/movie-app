@@ -1,7 +1,7 @@
 .movie-container {
     margin: auto;
     width: 90%;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
 }
 
 .movie-header {
@@ -10,6 +10,7 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 31px;
+    padding-top:2rem ;
 
 }
 
@@ -36,6 +37,7 @@
 
 .movie-card img {
     height: auto;
+    border-radius: 12px;
 }
 
 .movie-title {
@@ -50,10 +52,28 @@
     color: #fff;
 }
 
-.cart{
+.cart {
     position: absolute;
-  bottom: -10px;
-  width: 100%;
-  height: 2rem;
-  background-color: #4b0000;
+    bottom: -10px;
+    width: 100%;
+    height: 2rem;
+    background-color: #4b0000;
+}
+
+
+@media screen and (max-width:430px) {
+    .movie-header {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .movie-card {
+        font-size: 18px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .movie-title {
+        font-size: 18px;
+    }
 }
