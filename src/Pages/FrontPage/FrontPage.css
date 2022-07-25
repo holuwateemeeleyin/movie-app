@@ -22,6 +22,9 @@ img{
 
 /* for ipad */
 @media screen and (max-width:900px) {
+    .laptop-image{
+        display: none;
+    }
     .frontview-text {
         position: absolute;
         top: 50%;
@@ -38,5 +41,11 @@ img{
         font-weight: 700;
         font-size: 28px;
         line-height: 36px;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .mobile{
+        display: none;
     }
 }
