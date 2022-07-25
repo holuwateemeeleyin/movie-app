@@ -7,6 +7,7 @@ import Movie from './Pages/Movie';
 function App() {
   const [movies, setMovies]= useState([])
   const [searchInput, setSearchInput] = useState('')
+  const [carts, setCarts] = useState([])
   // const url=`http://www.omdbapi.com/?s=?${searchInput}&apikey=b8b2a730`
   
   const fetchMovies=(searchInput)=>{
@@ -20,12 +21,17 @@ function App() {
     fetchMovies(searchInput)
   }, [searchInput])
 
+  const addToCarts = (movie)=> {
+    const addCart = [...carts, movie]
+    setCarts(addCart)
+  }
+
   return (
     <div className='app'>
       <Header/>
       <FrontPage/>
       <SearchBox searchInput={searchInput} setSearchInput={setSearchInput}/>
-      <Movie movies={movies}/>
+      <Movie movies={movies} carts={carts} cartHandler={addToCarts}/>
     </div>
   );
 }
