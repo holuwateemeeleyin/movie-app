@@ -26,12 +26,19 @@ function App() {
     setCarts(addCart)
   }
 
+  const removeCart =(movie)=>{
+    const newCarts = carts.filter(
+      cart => cart.imdbID !== movie.imdbID
+    )
+    setCarts(newCarts)
+  }
+
   return (
     <div className='app'>
       <Header/>
       <FrontPage/>
       <SearchBox searchInput={searchInput} setSearchInput={setSearchInput}/>
-      <Movie movies={movies} carts={carts} cartHandler={addToCarts}/>
+      <Movie movies={movies} carts={carts} cartHandler={addToCarts} removeCart={removeCart}/>
     </div>
   );
 }
