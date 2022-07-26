@@ -60,6 +60,21 @@
     background-color: #4b0000;
 }
 
+.hide .movie-card .cart{
+    display: none;
+}
+
+.hide-remove .movie-card .remove-cart{
+    display: none;
+}
+
+.remove-cart{
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    height: 2rem;
+    background-color: #4b0000;   
+}
 
 @media screen and (max-width:430px) {
     .movie-header {
